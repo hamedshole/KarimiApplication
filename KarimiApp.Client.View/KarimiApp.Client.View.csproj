@@ -1,0 +1,755 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{B0303AB8-C39C-4CB9-87F3-35B1B211E031}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>KarimiApp.Client.View</RootNamespace>
+    <AssemblyName>KarimiApp.Client.View</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DateTimeSelector">
+      <HintPath>..\..\ZeytoonProjects - Copy\LastZeytoonReporter\bin\Debug\DateTimeSelector.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Charts.v22.1.Core, Version=22.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.CodeParser.v22.1, Version=22.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Drawing.v22.1, Version=22.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Data.v22.1, Version=22.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.DataAccess.v22.1, Version=22.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.DataAccess.v22.1.UI, Version=22.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Office.v22.1.Core, Version=22.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.PivotGrid.v22.1.Core, Version=22.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Printing.v22.1.Core, Version=22.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Data.Desktop.v22.1, Version=22.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.RichEdit.v22.1.Core, Version=22.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Sparkline.v22.1.Core, Version=22.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Utils.v22.1, Version=22.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Utils.v22.1.UI, Version=22.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraBars.v22.1, Version=22.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraCharts.v22.1, Version=22.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraCharts.v22.1.Extensions, Version=22.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraCharts.v22.1.UI, Version=22.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraCharts.v22.1.Wizard, Version=22.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraEditors.v22.1, Version=22.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraGauges.v22.1.Core, Version=22.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGrid.v22.1, Version=22.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraLayout.v22.1, Version=22.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraNavBar.v22.1, Version=22.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraPivotGrid.v22.1, Version=22.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraPrinting.v22.1, Version=22.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraReports.v22.1, Version=22.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraReports.v22.1.Extensions, Version=22.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraRichEdit.v22.1, Version=22.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraTreeList.v22.1, Version=22.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraVerticalGrid.v22.1, Version=22.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.12.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="PosRepository">
+      <HintPath>..\..\MainProjects\PosRepository\bin\Debug\PosRepository.dll</HintPath>
+    </Reference>
+    <Reference Include="SSP1126.PcPos, Version=1.4.6.3, Culture=neutral, PublicKeyToken=0316bed5306dcd90, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\MainProjects\PosRepository\bin\Debug\SSP1126.PcPos.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.OracleClient" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Drawing.Design" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AdminPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminPage.Designer.cs">
+      <DependentUpon>AdminPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CashierMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CashierMain.Designer.cs">
+      <DependentUpon>CashierMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CashierPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CashierPage.Designer.cs">
+      <DependentUpon>CashierPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CustomControls\BatchPaymentMethodControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CustomControls\BatchPaymentMethodControl.Designer.cs">
+      <DependentUpon>BatchPaymentMethodControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CustomControls\CustomBarButtonItem.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CustomControls\CustomRibbonPage.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CustomControls\CustomRibbonPageGroup.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CustomControls\CustomTreeView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CustomControls\CustomTreeView.Designer.cs">
+      <DependentUpon>CustomTreeView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Edit\AddInventoryItem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Edit\AddInventoryItem.Designer.cs">
+      <DependentUpon>AddInventoryItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Edit\AddInventoryItemDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Edit\AddInventoryItemDetail.Designer.cs">
+      <DependentUpon>AddInventoryItemDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Edit\PaymentEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Edit\PaymentEdit.Designer.cs">
+      <DependentUpon>PaymentEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Edit\PayoutTransaction.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Edit\PayoutTransaction.Designer.cs">
+      <DependentUpon>PayoutTransaction.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Edit\ReportDesiner.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Edit\ReportDesiner.Designer.cs">
+      <DependentUpon>ReportDesiner.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Edit\SupplierCompanyEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Edit\SupplierCompanyEdit.Designer.cs">
+      <DependentUpon>SupplierCompanyEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Edit\SupplierEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Edit\SupplierEdit.Designer.cs">
+      <DependentUpon>SupplierEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Edit\UserEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Edit\UserEdit.Designer.cs">
+      <DependentUpon>UserEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Edit\CustomerEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Edit\CustomerEdit.Designer.cs">
+      <DependentUpon>CustomerEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Edit\DepartmentEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Edit\DepartmentEdit.Designer.cs">
+      <DependentUpon>DepartmentEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Edit\InventoryEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Edit\InventoryEdit.Designer.cs">
+      <DependentUpon>InventoryEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Edit\InventoryTypeEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Edit\InventoryTypeEdit.Designer.cs">
+      <DependentUpon>InventoryTypeEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Edit\ItemCategoryEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Edit\ItemCategoryEdit.Designer.cs">
+      <DependentUpon>ItemCategoryEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Edit\ItemEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Edit\ItemEdit.Designer.cs">
+      <DependentUpon>ItemEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Edit\PaymentMethodEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Edit\PaymentMethodEdit.Designer.cs">
+      <DependentUpon>PaymentMethodEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Edit\PaymentTypeEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Edit\PaymentTypeEdit.Designer.cs">
+      <DependentUpon>PaymentTypeEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Edit\PosInfoEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Edit\PosInfoEdit.Designer.cs">
+      <DependentUpon>PosInfoEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Edit\RegisterEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Edit\RegisterEdit.Designer.cs">
+      <DependentUpon>RegisterEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Edit\UserRoleEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Edit\UserRoleEdit.Designer.cs">
+      <DependentUpon>UserRoleEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Edit\WorkStationEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Edit\WorkStationEdit.Designer.cs">
+      <DependentUpon>WorkStationEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="List\BatchList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="List\BatchList.Designer.cs">
+      <DependentUpon>BatchList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="List\BatchReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="List\BatchReport.Designer.cs">
+      <DependentUpon>BatchReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="List\CreditLogList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="List\CreditLogList.Designer.cs">
+      <DependentUpon>CreditLogList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="List\CustomerList.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="List\CustomerList.Designer.cs">
+      <DependentUpon>CustomerList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="List\DepartmentList.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="List\DepartmentList.Designer.cs">
+      <DependentUpon>DepartmentList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="List\InventoryList.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="List\InventoryList.Designer.cs">
+      <DependentUpon>InventoryList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="List\InventoryType.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="List\InventoryType.Designer.cs">
+      <DependentUpon>InventoryType.cs</DependentUpon>
+    </Compile>
+    <Compile Include="List\ItemCategoryList.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="List\ItemCategoryList.Designer.cs">
+      <DependentUpon>ItemCategoryList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="List\ItemList.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="List\ItemList.Designer.cs">
+      <DependentUpon>ItemList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="List\PaymentMethodList.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="List\PaymentMethodList.Designer.cs">
+      <DependentUpon>PaymentMethodList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="List\PaymentTypeList.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="List\PaymentTypeList.Designer.cs">
+      <DependentUpon>PaymentTypeList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="List\PersonCredits.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="List\PersonCredits.Designer.cs">
+      <DependentUpon>PersonCredits.cs</DependentUpon>
+    </Compile>
+    <Compile Include="List\PersonCreditsList.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="List\PersonCreditsList.Designer.cs">
+      <DependentUpon>PersonCreditsList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="List\PosInfoList.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="List\PosInfoList.Designer.cs">
+      <DependentUpon>PosInfoList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="List\RegisterList.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="List\RegisterList.Designer.cs">
+      <DependentUpon>RegisterList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="List\UserList.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="List\UserList.Designer.cs">
+      <DependentUpon>UserList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="List\UserRoleList.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="List\UserRoleList.Designer.cs">
+      <DependentUpon>UserRoleList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="List\WorkStationList.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="List\WorkStationList.Designer.cs">
+      <DependentUpon>WorkStationList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="List\PayoutTransactionList.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="List\PayoutTransactionList.Designer.cs">
+      <DependentUpon>PayoutTransactionList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="List\WorkstationReceiptList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="List\WorkstationReceiptList.Designer.cs">
+      <DependentUpon>WorkstationReceiptList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LoginPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginPage.Designer.cs">
+      <DependentUpon>LoginPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Settings\AdminPanelControls\PictureSelector.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Settings\AdminPanelControls\PictureSelector.Designer.cs">
+      <DependentUpon>PictureSelector.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Settings\Batch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Settings\Batch.Designer.cs">
+      <DependentUpon>Batch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Settings\ClientFirstConfig.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Settings\ClientFirstConfig.Designer.cs">
+      <DependentUpon>ClientFirstConfig.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Settings\CustomizeToolbar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Settings\CustomizeToolbar.Designer.cs">
+      <DependentUpon>CustomizeToolbar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Settings\ImageSelector.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Settings\ImageSelector.Designer.cs">
+      <DependentUpon>ImageSelector.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Settings\WorkStationMessage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Settings\WorkStationMessage.Designer.cs">
+      <DependentUpon>WorkStationMessage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Settings\WorkStationPanel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Settings\WorkStationPanel.Designer.cs">
+      <DependentUpon>WorkStationPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SplashScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SplashScreen.Designer.cs">
+      <DependentUpon>SplashScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Util\IMellatPos.cs" />
+    <Compile Include="Util\ModelFactory.cs" />
+    <Compile Include="Util\PosRepository.cs" />
+    <Compile Include="Util\Pos\SamanPos.cs" />
+    <Compile Include="Util\Pos\ISamanPos.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\DataSources\KarimiApp.Model.BankValueModel.datasource" />
+    <None Include="Properties\DataSources\KarimiApp.Model.BatchModel.datasource" />
+    <None Include="Properties\DataSources\KarimiApp.Model.InventoryLogModel.datasource" />
+    <None Include="Properties\DataSources\KarimiApp.Model.ItemModel.datasource" />
+    <None Include="Properties\DataSources\KarimiApp.Model.PayoutTransactionModel.datasource" />
+    <None Include="Properties\DataSources\KarimiApp.Model.PersonCreditHeaderModel.datasource" />
+    <None Include="Properties\DataSources\KarimiApp.Model.PersonCreditLogModel.datasource" />
+    <None Include="Properties\DataSources\KarimiApp.Model.PersonModel.datasource" />
+    <None Include="Properties\DataSources\KarimiApp.Model.ReceiptModel.datasource" />
+    <None Include="Properties\DataSources\KarimiApp.Model.TransactionEntryModel.datasource" />
+    <None Include="Properties\DataSources\KarimiApp.Model.UserModel.datasource" />
+    <None Include="Resources\inventorycategoryicon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="AdminPage.resx">
+      <DependentUpon>AdminPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CashierMain.resx">
+      <DependentUpon>CashierMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CashierPage.resx">
+      <DependentUpon>CashierPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CustomControls\BatchPaymentMethodControl.resx">
+      <DependentUpon>BatchPaymentMethodControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Edit\AddInventoryItem.resx">
+      <DependentUpon>AddInventoryItem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Edit\AddInventoryItemDetail.resx">
+      <DependentUpon>AddInventoryItemDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Edit\PaymentEdit.resx">
+      <DependentUpon>PaymentEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Edit\PayoutTransaction.resx">
+      <DependentUpon>PayoutTransaction.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Edit\ReportDesiner.resx">
+      <DependentUpon>ReportDesiner.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Edit\SupplierCompanyEdit.resx">
+      <DependentUpon>SupplierCompanyEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Edit\SupplierEdit.resx">
+      <DependentUpon>SupplierEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Edit\UserEdit.resx">
+      <DependentUpon>UserEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Edit\CustomerEdit.resx">
+      <DependentUpon>CustomerEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Edit\DepartmentEdit.resx">
+      <DependentUpon>DepartmentEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Edit\InventoryEdit.resx">
+      <DependentUpon>InventoryEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Edit\InventoryTypeEdit.resx">
+      <DependentUpon>InventoryTypeEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Edit\ItemCategoryEdit.resx">
+      <DependentUpon>ItemCategoryEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Edit\ItemEdit.resx">
+      <DependentUpon>ItemEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Edit\PaymentMethodEdit.resx">
+      <DependentUpon>PaymentMethodEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Edit\PaymentTypeEdit.resx">
+      <DependentUpon>PaymentTypeEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Edit\PosInfoEdit.resx">
+      <DependentUpon>PosInfoEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Edit\RegisterEdit.resx">
+      <DependentUpon>RegisterEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Edit\UserRoleEdit.resx">
+      <DependentUpon>UserRoleEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Edit\WorkStationEdit.resx">
+      <DependentUpon>WorkStationEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="List\BatchList.resx">
+      <DependentUpon>BatchList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="List\BatchReport.resx">
+      <DependentUpon>BatchReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="List\CreditLogList.resx">
+      <DependentUpon>CreditLogList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="List\CustomerList.resx">
+      <DependentUpon>CustomerList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="List\DepartmentList.resx">
+      <DependentUpon>DepartmentList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="List\InventoryList.resx">
+      <DependentUpon>InventoryList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="List\InventoryType.resx">
+      <DependentUpon>InventoryType.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="List\ItemCategoryList.resx">
+      <DependentUpon>ItemCategoryList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="List\ItemList.resx">
+      <DependentUpon>ItemList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="List\PaymentMethodList.resx">
+      <DependentUpon>PaymentMethodList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="List\PaymentTypeList.resx">
+      <DependentUpon>PaymentTypeList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="List\PersonCredits.resx">
+      <DependentUpon>PersonCredits.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="List\PersonCreditsList.resx">
+      <DependentUpon>PersonCreditsList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="List\PosInfoList.resx">
+      <DependentUpon>PosInfoList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="List\RegisterList.resx">
+      <DependentUpon>RegisterList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="List\UserList.resx">
+      <DependentUpon>UserList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="List\UserRoleList.resx">
+      <DependentUpon>UserRoleList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="List\WorkStationList.resx">
+      <DependentUpon>WorkStationList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="List\PayoutTransactionList.resx">
+      <DependentUpon>PayoutTransactionList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="List\WorkstationReceiptList.resx">
+      <DependentUpon>WorkstationReceiptList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginPage.resx">
+      <DependentUpon>LoginPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Settings\Batch.resx">
+      <DependentUpon>Batch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Settings\ClientFirstConfig.resx">
+      <DependentUpon>ClientFirstConfig.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Settings\CustomizeToolbar.resx">
+      <DependentUpon>CustomizeToolbar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Settings\ImageSelector.resx">
+      <DependentUpon>ImageSelector.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Settings\WorkStationMessage.resx">
+      <DependentUpon>WorkStationMessage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Settings\WorkStationPanel.resx">
+      <DependentUpon>WorkStationPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SplashScreen.resx">
+      <DependentUpon>SplashScreen.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="packages.config" />
+    <None Include="Resources\departmenticon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\KarimiApp.Client.Repository\KarimiApp.Client.Repository.csproj">
+      <Project>{307E4C39-632D-4013-A15A-AFB276CD1410}</Project>
+      <Name>KarimiApp.Client.Repository</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\KarimiApp.Exceptions\KarimiApp.Exceptions.csproj">
+      <Project>{c7946bfe-6083-422f-8511-f7602252e9bf}</Project>
+      <Name>KarimiApp.Exceptions</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\KarimiApp.Interface\KarimiApp.Interface.csproj">
+      <Project>{D9CDF5EB-523B-4A63-9F71-4ABB31E34049}</Project>
+      <Name>KarimiApp.Interface</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\KarimiApp.Model\KarimiApp.Model.csproj">
+      <Project>{66586490-E5AC-4646-973A-36523143D94C}</Project>
+      <Name>KarimiApp.Model</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\KarimiApp.ReportPrintRepository\KarimiApp.ReportPrintRepository.csproj">
+      <Project>{7dd4401b-099d-4c57-a08a-8857adae8252}</Project>
+      <Name>KarimiApp.ReportPrintRepository</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\KarimiApp.Workstation.Client.Repository\KarimiApp.Workstation.Client.Repository.csproj">
+      <Project>{43f1e5bd-5e95-49f2-bd6e-1af049265078}</Project>
+      <Name>KarimiApp.Workstation.Client.Repository</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\inventoryicon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\itemgroupicon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\itemicon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\paymentmethodicon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\paymenttypeicon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\poicon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\registericon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\supliericon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\userroleicon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\usersicon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\workstationicon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\customericon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ddd.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\full2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\payouticon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\accounting_button.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\customer_management_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\inventory_management_button.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\settings_button.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user_managemt_button.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ordericon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\incomeoutgoicon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IMG_8534.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cash.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mellat.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\saman.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appicon.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_list_50px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_check_50px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\delete_48px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\delete_20px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add_user_group_man_man_48px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add_user_group_man_man_20px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\accounting_20px.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

@@ -1,0 +1,104 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{66586490-E5AC-4646-973A-36523143D94C}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>KarimiApp.Model</RootNamespace>
+    <AssemblyName>KarimiApp.Model</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.12.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BankValueModel.cs" />
+    <Compile Include="BatchModel.cs" />
+    <Compile Include="DiscountModel.cs" />
+    <Compile Include="ExtentionMethods.cs" />
+    <Compile Include="InventoryLogModel.cs" />
+    <Compile Include="PersonCreditHeaderModel.cs" />
+    <Compile Include="OrderTransactionModel.cs" />
+    <Compile Include="PaymentTransactionModel.cs" />
+    <Compile Include="PayoutTransactionModel.cs" />
+    <Compile Include="PersonCreditLogModel.cs" />
+    <Compile Include="TransactionModel.cs" />
+    <Compile Include="WorkstationHardKeyModel.cs" />
+    <Compile Include="WorkStationMessageModel.cs" />
+    <Compile Include="WorkstationPluModel.cs" />
+    <Compile Include="CustomToolbarModel.cs" />
+    <Compile Include="DepartmentModel.cs" />
+    <Compile Include="FunctionModel.cs" />
+    <Compile Include="HardwareKeyModel.cs" />
+    <Compile Include="InventoryGroupModel.cs" />
+    <Compile Include="InventoryModel.cs" />
+    <Compile Include="ItemCategoryModel.cs" />
+    <Compile Include="ItemModel.cs" />
+    <Compile Include="PaymentMethodModel.cs" />
+    <Compile Include="PaymentTypeModel.cs" />
+    <Compile Include="Permission.cs" />
+    <Compile Include="PersonGroupModel.cs" />
+    <Compile Include="PersonModel.cs" />
+    <Compile Include="PluModel.cs" />
+    <Compile Include="PosInfoModel.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ReceiptEntryModel.cs" />
+    <Compile Include="ReceiptModel.cs" />
+    <Compile Include="RegisterModel.cs" />
+    <Compile Include="RibbonBarButtonModel.cs" />
+    <Compile Include="RibbonPageGroupModel.cs" />
+    <Compile Include="RibbonPageModel.cs" />
+    <Compile Include="SettingsModel.cs" />
+    <Compile Include="SupplierAgentModel.cs" />
+    <Compile Include="SupplierCompanyModel.cs" />
+    <Compile Include="TransactionEntryModel.cs" />
+    <Compile Include="TransactionTypeModel.cs" />
+    <Compile Include="UserModel.cs" />
+    <Compile Include="UserRoleModel.cs" />
+    <Compile Include="UserSettingsModel.cs" />
+    <Compile Include="WorkstationModel.cs" />
+    <Compile Include="WorkstationReceiptFilterModel.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

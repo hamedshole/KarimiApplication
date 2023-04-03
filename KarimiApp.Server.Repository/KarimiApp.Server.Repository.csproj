@@ -1,0 +1,116 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{3C1D9442-B85C-47F5-B38E-5500DE4089AF}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>KarimiApp.Server.Repository</RootNamespace>
+    <AssemblyName>KarimiApp.Server.Repository</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Arvin.Model">
+      <HintPath>..\..\MainProjects\WindowsClient\bin\Debug\Arvin.Model.dll</HintPath>
+    </Reference>
+    <Reference Include="Arvin.Net">
+      <HintPath>..\..\MainProjects\WindowsClient\bin\Debug\Arvin.Net.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.12.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="IWorkstationServer.cs" />
+    <Compile Include="MainRepository.cs" />
+    <Compile Include="Repository\AuthenticationRepository.cs" />
+    <Compile Include="Repository\BatchRepository.cs" />
+    <Compile Include="Repository\DepartmentRepository.cs" />
+    <Compile Include="Repository\HardwareKeyRepository.cs" />
+    <Compile Include="Repository\AcountingRepository.cs" />
+    <Compile Include="Repository\DiscountRepository.cs" />
+    <Compile Include="Repository\InventoryManagementRepository.cs" />
+    <Compile Include="Repository\InventoryRepository.cs" />
+    <Compile Include="Repository\InventoryGroupRepository.cs" />
+    <Compile Include="Repository\ItemCategoryRepository.cs" />
+    <Compile Include="Repository\ItemRepository.cs" />
+    <Compile Include="Repository\OrderTransactionRepository.cs" />
+    <Compile Include="Repository\PaymentMethodRepository.cs" />
+    <Compile Include="Repository\PaymentTransactionRepository.cs" />
+    <Compile Include="Repository\PaymentTypeRepository.cs" />
+    <Compile Include="Repository\PayoutTransactionRepository.cs" />
+    <Compile Include="Repository\PersonGroupRepository.cs" />
+    <Compile Include="Repository\PersonRepository.cs" />
+    <Compile Include="Repository\PluRepository.cs" />
+    <Compile Include="Repository\PosInfoRepository.cs" />
+    <Compile Include="Repository\ReceiptRepository.cs" />
+    <Compile Include="Repository\RegisterRepository.cs" />
+    <Compile Include="Repository\SupplierCompanyRepository.cs" />
+    <Compile Include="Repository\SupplierRepository.cs" />
+    <Compile Include="Repository\TransactionRepository.cs" />
+    <Compile Include="Repository\TransactionTypeRepository.cs" />
+    <Compile Include="Repository\UserRepository.cs" />
+    <Compile Include="Repository\UserRoleRepository.cs" />
+    <Compile Include="Repository\UserSettingsRepository.cs" />
+    <Compile Include="Repository\WorkstationRepository.cs" />
+    <Compile Include="Repository\WorkstationServerRepository.cs" />
+    <Compile Include="UnitOfWork.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\KarimiApp.DataAccess\KarimiApp.DataAccess.csproj">
+      <Project>{9a1f823f-25c3-4e21-982c-c9a29a9523f7}</Project>
+      <Name>KarimiApp.DataAccess</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\KarimiApp.Interface\KarimiApp.Interface.csproj">
+      <Project>{d9cdf5eb-523b-4a63-9f71-4abb31e34049}</Project>
+      <Name>KarimiApp.Interface</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\KarimiApp.Model\KarimiApp.Model.csproj">
+      <Project>{66586490-e5ac-4646-973a-36523143d94c}</Project>
+      <Name>KarimiApp.Model</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\KarimiApp.Workstation.ModelFactory\KarimiApp.Workstation.ModelFactory.csproj">
+      <Project>{95C1C047-7596-4FC4-879C-1856E8093E56}</Project>
+      <Name>KarimiApp.Workstation.ModelFactory</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

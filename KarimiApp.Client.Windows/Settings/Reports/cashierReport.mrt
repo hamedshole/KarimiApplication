@@ -1,0 +1,1037 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<StiSerializer version="1.02" type="Net" application="StiReport">
+  <Dictionary Ref="1" type="Dictionary" isKey="true">
+    <BusinessObjects isList="true" count="0" />
+    <Databases isList="true" count="0" />
+    <DataSources isList="true" count="1">
+      <order Ref="2" type="DataTableSource" isKey="true">
+        <Alias>order</Alias>
+        <Columns isList="true" count="5">
+          <value>id,System.String</value>
+          <value>name,System.String</value>
+          <value>cost,System.String</value>
+          <value>count,System.String</value>
+          <value>totalcost,System.String</value>
+        </Columns>
+        <Dictionary isRef="1" />
+        <Key>5c5431d082804c288c2ee5721a59339c</Key>
+        <Name>order</Name>
+        <NameInSource>order</NameInSource>
+      </order>
+    </DataSources>
+    <Relations isList="true" count="0" />
+    <Report isRef="0" />
+    <Resources isList="true" count="0" />
+    <Variables isList="true" count="10">
+      <value>,barcode,barcode,,System.String,_x0030_00411200156012020512111870000270000,False,False,False,False</value>
+      <value>,usercode,usercode,,System.String,حامد_x0020_شعله,False,False,False,False</value>
+      <value>,customername,customername,,System.String,مشتری_x0020_متفرقه,False,False,False,False</value>
+      <value>,discount,discount,,System.Int64,_x0030_,False,False,False,False</value>
+      <value>,tottalcost,tottalcost,,System.Int64,_x0031_80000,False,False,False,False</value>
+      <value>,storename,storename,,System.String,قنادی_x0020_کریمی,False,False,False,False</value>
+      <value>,storebranch,storebranch,,System.String,شعبه_x0020_چایکنار,False,False,False,False</value>
+      <value>,storewebsite,storewebsite,,System.String,www.karimiconfectionery.com,False,False,False,False</value>
+      <value>,storePhone,storePhone,,System.String,_x0033_3342042,False,False,False,False</value>
+      <value>,storeAddress,storeAddress,,System.String,چایکنار_x0028_به_x0020_طرف_x0020_ابرسان_x0029__x0020__x000D__x000A_نرسیده_x0020_به_x0020_پل_x0020_سنگی,False,False,False,False</value>
+    </Variables>
+  </Dictionary>
+  <EngineVersion>EngineV2</EngineVersion>
+  <GlobalizationStrings isList="true" count="0" />
+  <Key>68c716ce6867456ba8ece35215a0d7d5</Key>
+  <MetaTags isList="true" count="0" />
+  <Pages isList="true" count="1">
+    <Page1 Ref="3" type="Page" isKey="true">
+      <Border>None;Black;2;Solid;False;4;Black</Border>
+      <Brush>Transparent</Brush>
+      <Components isList="true" count="4">
+        <ReportTitleBand1 Ref="4" type="ReportTitleBand" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>0,0.4,7.6,4.4</ClientRectangle>
+          <Components isList="true" count="17">
+            <Text24 Ref="5" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <CanGrow>True</CanGrow>
+              <ClientRectangle>1,0.6,3.8,0.8</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Tahoma,17</Font>
+              <Guid>81e993d8d31448cebc6ec9652d8831d7</Guid>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text24</Name>
+              <Page isRef="3" />
+              <Parent isRef="4" />
+              <ShrinkFontToFit>True</ShrinkFontToFit>
+              <Text>{storename}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>,,RightToLeft=True,,WordWrap=True,A=0</TextOptions>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text24>
+            <Text22 Ref="6" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <CanGrow>True</CanGrow>
+              <ClientRectangle>1,1.4,2.6,0.8</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Microsoft Sans Serif,11</Font>
+              <Guid>bbbfc52f8a05441f9655233073197116</Guid>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text22</Name>
+              <Page isRef="3" />
+              <Parent isRef="4" />
+              <Text>{storebranch}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>,,RightToLeft=True,,WordWrap=True,A=0</TextOptions>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text22>
+            <Text10 Ref="7" type="Text" isKey="true">
+              <Border>All;Black;1;Solid;False;4;Black</Border>
+              <Brush>[216:216:216]</Brush>
+              <ClientRectangle>6.8,4.2,0.6,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Microsoft Sans Serif,9</Font>
+              <Guid>c5eb364fb5e944d193e6cbaebd7a927d</Guid>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text10</Name>
+              <Page isRef="3" />
+              <Parent isRef="4" />
+              <Text>ردیف</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>,,RightToLeft=True,,,Angle=45</TextOptions>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text10>
+            <Text13 Ref="8" type="Text" isKey="true">
+              <Border>All;Black;1;Solid;False;4;Black</Border>
+              <Brush>[216:216:216]</Brush>
+              <ClientRectangle>4.2,4.2,2.6,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Microsoft Sans Serif,9</Font>
+              <Guid>5dc293d40c6f49ad8fd867a665bcb422</Guid>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text13</Name>
+              <Page isRef="3" />
+              <Parent isRef="4" />
+              <Text>شرح کالا</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>,,RightToLeft=True,,,A=0</TextOptions>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text13>
+            <Text15 Ref="9" type="Text" isKey="true">
+              <Border>All;Black;1;Solid;False;4;Black</Border>
+              <Brush>[216:216:216]</Brush>
+              <ClientRectangle>3.2,4.2,1,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Microsoft Sans Serif,9</Font>
+              <Guid>4217c4b77c374f528264eca55a47f094</Guid>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text15</Name>
+              <Page isRef="3" />
+              <Parent isRef="4" />
+              <Text>مقدار</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>,,RightToLeft=True,,,A=0</TextOptions>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text15>
+            <Text16 Ref="10" type="Text" isKey="true">
+              <Border>All;Black;1;Solid;False;4;Black</Border>
+              <Brush>[216:216:216]</Brush>
+              <ClientRectangle>1.6,4.2,1.6,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Microsoft Sans Serif,9</Font>
+              <Guid>ea721ccc18bf425e8634ff1620d699be</Guid>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text16</Name>
+              <Page isRef="3" />
+              <Parent isRef="4" />
+              <Text>قیمت فروش</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>,,RightToLeft=True,,,A=0</TextOptions>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text16>
+            <Text17 Ref="11" type="Text" isKey="true">
+              <Border>All;Black;1;Solid;False;4;Black</Border>
+              <Brush>[216:216:216]</Brush>
+              <ClientRectangle>0.2,4.2,1.4,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Microsoft Sans Serif,9</Font>
+              <Guid>41de8717f6cb42989861279fc8532359</Guid>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text17</Name>
+              <Page isRef="3" />
+              <Parent isRef="4" />
+              <Text>مجموع</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>,,RightToLeft=True,,,A=0</TextOptions>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text17>
+            <Image2 Ref="12" type="Image" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>4.8,0.4,2,2</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <HorAlignment>Center</HorAlignment>
+              <ImageBytes>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
+2Q==</ImageBytes>
+              <Margins>0,0,0,0</Margins>
+              <Name>Image2</Name>
+              <Page isRef="3" />
+              <Parent isRef="4" />
+              <VertAlignment>Center</VertAlignment>
+            </Image2>
+            <Text23 Ref="13" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>5.4,2.4,1.4,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Microsoft Sans Serif,10</Font>
+              <Guid>1942f0cf4bc7408d87c067ca76807aca</Guid>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text23</Name>
+              <Page isRef="3" />
+              <Parent isRef="4" />
+              <Text>کد کاربری:</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>,,RightToLeft=True,,,A=0</TextOptions>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text23>
+            <Text1 Ref="14" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>5.4,2.8,1.4,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Microsoft Sans Serif,10</Font>
+              <Guid>b1c922c09eb843f396943cfacc7f6848</Guid>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text1</Name>
+              <Page isRef="3" />
+              <Parent isRef="4" />
+              <Text>مشتری:</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>,,RightToLeft=True,,,A=0</TextOptions>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text1>
+            <Text2 Ref="15" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>2.6,2.4,2.8,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Microsoft Sans Serif,10</Font>
+              <Guid>06e1967b6e1545d294ee12a4a48f7ff9</Guid>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text2</Name>
+              <Page isRef="3" />
+              <Parent isRef="4" />
+              <Text>{usercode}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>,,RightToLeft=True,,,A=0</TextOptions>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text2>
+            <Text3 Ref="16" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>2.6,2.8,2.8,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Microsoft Sans Serif,10</Font>
+              <Guid>8e7db26cb17945bf86c7269c7d18bbc8</Guid>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text3</Name>
+              <Page isRef="3" />
+              <Parent isRef="4" />
+              <Text>{customername}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>,,RightToLeft=True,,,A=0</TextOptions>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text3>
+            <Text26 Ref="17" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>5.4,3.4,1.4,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Microsoft Sans Serif,10</Font>
+              <Guid>9b1be7e9209c4add883c07bc4719e6ee</Guid>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text26</Name>
+              <Page isRef="3" />
+              <Parent isRef="4" />
+              <Text>زمان:</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>,,RightToLeft=True,,,A=0</TextOptions>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text26>
+            <Text27 Ref="18" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0.6,3.4,4.8,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Microsoft Sans Serif,10</Font>
+              <Guid>573eea49947648e18d80f280f69a5e20</Guid>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text27</Name>
+              <Page isRef="3" />
+              <Parent isRef="4" />
+              <Text>{Time}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>,,RightToLeft=True,,,A=0</TextOptions>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text27>
+            <StartPointPrimitive2 Ref="19" type="Stimulsoft.Report.Components.StiStartPointPrimitive" isKey="true">
+              <ClientRectangle>0,0,0,0</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Name>StartPointPrimitive2</Name>
+              <Page isRef="3" />
+              <Parent isRef="4" />
+              <ReferenceToGuid>fdf3e8539c4d4937a2b139953be3ae58</ReferenceToGuid>
+            </StartPointPrimitive2>
+            <StartPointPrimitive1 Ref="20" type="Stimulsoft.Report.Components.StiStartPointPrimitive" isKey="true">
+              <ClientRectangle>0.6,0.2,0,0</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Name>StartPointPrimitive1</Name>
+              <Page isRef="3" />
+              <Parent isRef="4" />
+              <ReferenceToGuid>31bac19685b74e37a1bcb29dff579691</ReferenceToGuid>
+            </StartPointPrimitive1>
+            <EndPointPrimitive1 Ref="21" type="Stimulsoft.Report.Components.StiEndPointPrimitive" isKey="true">
+              <ClientRectangle>7,4,0,0</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Name>EndPointPrimitive1</Name>
+              <Page isRef="3" />
+              <Parent isRef="4" />
+              <ReferenceToGuid>31bac19685b74e37a1bcb29dff579691</ReferenceToGuid>
+            </EndPointPrimitive1>
+          </Components>
+          <Conditions isList="true" count="0" />
+          <Name>ReportTitleBand1</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+        </ReportTitleBand1>
+        <DataBand1 Ref="22" type="DataBand" isKey="true">
+          <Brush>Transparent</Brush>
+          <BusinessObjectGuid isNull="true" />
+          <ClientRectangle>0,5.6,7.6,0.6</ClientRectangle>
+          <Components isList="true" count="11">
+            <Text7 Ref="23" type="Text" isKey="true">
+              <Border>All;Black;1;Solid;False;4;Black</Border>
+              <Brush>EmptyBrush</Brush>
+              <CanGrow>True</CanGrow>
+              <ClientRectangle>4.2,0,2.6,0.8</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,8</Font>
+              <GrowToHeight>True</GrowToHeight>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text7</Name>
+              <Page isRef="3" />
+              <Parent isRef="22" />
+              <Text>{order.name}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>,,,,WordWrap=True,A=0</TextOptions>
+              <VertAlignment>Center</VertAlignment>
+            </Text7>
+            <Text12 Ref="24" type="Text" isKey="true">
+              <Border>All;Black;1;Solid;False;4;Black</Border>
+              <Brush>EmptyBrush</Brush>
+              <ClientRectangle>1.6,0,1.6,0.8</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,8</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text12</Name>
+              <Page isRef="3" />
+              <Parent isRef="22" />
+              <Text>{order.cost}</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text12>
+            <Text14 Ref="25" type="Text" isKey="true">
+              <Border>All;Black;1;Solid;False;4;Black</Border>
+              <Brush>EmptyBrush</Brush>
+              <ClientRectangle>3.2,0,1,0.8</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,8</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text14</Name>
+              <Page isRef="3" />
+              <Parent isRef="22" />
+              <Text>{order.count}</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text14>
+            <Text18 Ref="26" type="Text" isKey="true">
+              <Border>All;Black;1;Solid;False;4;Black</Border>
+              <Brush>EmptyBrush</Brush>
+              <ClientRectangle>0.2,0,1.4,0.8</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,8</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text18</Name>
+              <Page isRef="3" />
+              <Parent isRef="22" />
+              <Text>{Floor(decimal.Parse(order.totalcost))}</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text18>
+            <Text19 Ref="27" type="Text" isKey="true">
+              <Border>All;Black;1;Solid;False;4;Black</Border>
+              <Brush>EmptyBrush</Brush>
+              <CanGrow>True</CanGrow>
+              <ClientRectangle>6.8,0,0.6,0.8</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,8</Font>
+              <GrowToHeight>True</GrowToHeight>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text19</Name>
+              <Page isRef="3" />
+              <Parent isRef="22" />
+              <Text>{Line}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>,,,,WordWrap=True,A=0</TextOptions>
+              <Type>SystemVariables</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text19>
+            <StartPointPrimitive3 Ref="28" type="Stimulsoft.Report.Components.StiStartPointPrimitive" isKey="true">
+              <ClientRectangle>4.2,-0.4,0,0</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Name>StartPointPrimitive3</Name>
+              <Page isRef="3" />
+              <Parent isRef="22" />
+              <ReferenceToGuid>f9fcb26ec8754d20890ce11a2f0c8d84</ReferenceToGuid>
+            </StartPointPrimitive3>
+            <StartPointPrimitive4 Ref="29" type="Stimulsoft.Report.Components.StiStartPointPrimitive" isKey="true">
+              <ClientRectangle>2.6,-0.4,0,0</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Name>StartPointPrimitive4</Name>
+              <Page isRef="3" />
+              <Parent isRef="22" />
+              <ReferenceToGuid>f4cc876a20694bab93a7cd9dd3402a16</ReferenceToGuid>
+            </StartPointPrimitive4>
+            <StartPointPrimitive5 Ref="30" type="Stimulsoft.Report.Components.StiStartPointPrimitive" isKey="true">
+              <ClientRectangle>2,-0.4,0,0</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Name>StartPointPrimitive5</Name>
+              <Page isRef="3" />
+              <Parent isRef="22" />
+              <ReferenceToGuid>d0c83827dfc54ae086a0f804ab465141</ReferenceToGuid>
+            </StartPointPrimitive5>
+            <StartPointPrimitive6 Ref="31" type="Stimulsoft.Report.Components.StiStartPointPrimitive" isKey="true">
+              <ClientRectangle>0.2,-0.4,0,0</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Name>StartPointPrimitive6</Name>
+              <Page isRef="3" />
+              <Parent isRef="22" />
+              <ReferenceToGuid>b3186f657dc2431798ee2525471f1df0</ReferenceToGuid>
+            </StartPointPrimitive6>
+            <StartPointPrimitive12 Ref="32" type="Stimulsoft.Report.Components.StiStartPointPrimitive" isKey="true">
+              <ClientRectangle>6.8,-0.4,0,0</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Name>StartPointPrimitive12</Name>
+              <Page isRef="3" />
+              <Parent isRef="22" />
+              <ReferenceToGuid>71453f85c17c41779749462fa61ef8aa</ReferenceToGuid>
+            </StartPointPrimitive12>
+            <EndPointPrimitive2 Ref="33" type="Stimulsoft.Report.Components.StiEndPointPrimitive" isKey="true">
+              <ClientRectangle>7.2,0,0,0</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Name>EndPointPrimitive2</Name>
+              <Page isRef="3" />
+              <Parent isRef="22" />
+              <ReferenceToGuid>fdf3e8539c4d4937a2b139953be3ae58</ReferenceToGuid>
+            </EndPointPrimitive2>
+          </Components>
+          <Conditions isList="true" count="0" />
+          <DataRelationName isNull="true" />
+          <DataSourceName>order</DataSourceName>
+          <Filters isList="true" count="0" />
+          <Name>DataBand1</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <Sort isList="true" count="0" />
+        </DataBand1>
+        <ReportSummaryBand1 Ref="34" type="ReportSummaryBand" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>0,7,7.6,5</ClientRectangle>
+          <Components isList="true" count="22">
+            <Text48 Ref="35" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>6.8,2.39,0.6,1.4</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Microsoft Sans Serif,8</Font>
+              <Guid>0852dc9f83b841f8995409f7a76a2b40</Guid>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text48</Name>
+              <Page isRef="3" />
+              <Parent isRef="34" />
+              <Text>HSHK</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>,,RightToLeft=True,,,Angle=90</TextOptions>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text48>
+            <Text40 Ref="36" type="Text" isKey="true">
+              <Border>All;Black;1;Solid;False;4;Black</Border>
+              <Brush>[191:191:191]</Brush>
+              <ClientRectangle>4.6,0,2.8,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Microsoft Sans Serif,9</Font>
+              <Guid>d0d3693432c3414f8dc246e88afd1bf6</Guid>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text40</Name>
+              <Page isRef="3" />
+              <Parent isRef="34" />
+              <Text>جمع کل</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>,,RightToLeft=True,,,A=0</TextOptions>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text40>
+            <Text41 Ref="37" type="Text" isKey="true">
+              <Border>Top, Right, Bottom;Black;1;Solid;False;4;Black</Border>
+              <Brush>[191:191:191]</Brush>
+              <ClientRectangle>1,0,3.6,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Microsoft Sans Serif,10</Font>
+              <Guid>746b0c4f1b5143508971e649ae9a3589</Guid>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text41</Name>
+              <Page isRef="3" />
+              <Parent isRef="34" />
+              <Text>{tottalcost}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextFormat Ref="38" type="NumberFormat" isKey="true">
+                <DecimalDigits>0</DecimalDigits>
+                <GroupSeparator>,</GroupSeparator>
+                <NegativePattern>4</NegativePattern>
+                <UseLocalSetting>False</UseLocalSetting>
+              </TextFormat>
+              <TextOptions>,,RightToLeft=True,,,A=0</TextOptions>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text41>
+            <Text42 Ref="39" type="Text" isKey="true">
+              <Border>Top, Left, Bottom;Black;1;Solid;False;4;Black</Border>
+              <Brush>[191:191:191]</Brush>
+              <ClientRectangle>0.2,0,0.8,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Microsoft Sans Serif,9</Font>
+              <Guid>d9bf145127dc46dbb7171dac72afab2d</Guid>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text42</Name>
+              <Page isRef="3" />
+              <Parent isRef="34" />
+              <Text>ریال</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>,,RightToLeft=True,,,A=0</TextOptions>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text42>
+            <Text4 Ref="40" type="Text" isKey="true">
+              <Border>All;Black;1;Solid;False;4;Black</Border>
+              <Brush>[191:191:191]</Brush>
+              <ClientRectangle>4.6,0.6,2.8,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Microsoft Sans Serif,9</Font>
+              <Guid>9f3da1a4274442f4a922f138760121dd</Guid>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text4</Name>
+              <Page isRef="3" />
+              <Parent isRef="34" />
+              <Text>تخفیف</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>,,RightToLeft=True,,,A=0</TextOptions>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text4>
+            <Text5 Ref="41" type="Text" isKey="true">
+              <Border>Top, Right, Bottom;Black;1;Solid;False;4;Black</Border>
+              <Brush>[191:191:191]</Brush>
+              <ClientRectangle>1,0.6,3.6,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Microsoft Sans Serif,10</Font>
+              <Guid>3000e3520db14b50a762fcf7ff135aee</Guid>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text5</Name>
+              <Page isRef="3" />
+              <Parent isRef="34" />
+              <Text>{discount}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextFormat Ref="42" type="NumberFormat" isKey="true">
+                <DecimalDigits>0</DecimalDigits>
+                <GroupSeparator>,</GroupSeparator>
+                <NegativePattern>4</NegativePattern>
+                <UseLocalSetting>False</UseLocalSetting>
+              </TextFormat>
+              <TextOptions>,,RightToLeft=True,,,A=0</TextOptions>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text5>
+            <Text6 Ref="43" type="Text" isKey="true">
+              <Border>Top, Left, Bottom;Black;1;Solid;False;4;Black</Border>
+              <Brush>[191:191:191]</Brush>
+              <ClientRectangle>0.2,0.6,0.8,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Microsoft Sans Serif,9</Font>
+              <Guid>8339f970ee424d70b168e2e90f2eabf5</Guid>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text6</Name>
+              <Page isRef="3" />
+              <Parent isRef="34" />
+              <Text>ریال</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>,,RightToLeft=True,,,A=0</TextOptions>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text6>
+            <Text8 Ref="44" type="Text" isKey="true">
+              <Border>All;Black;1;Solid;False;4;Black</Border>
+              <Brush>[191:191:191]</Brush>
+              <ClientRectangle>4.6,1.2,2.8,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Microsoft Sans Serif,9</Font>
+              <Guid>84a9e7d283e541c59371c502cc10bab5</Guid>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text8</Name>
+              <Page isRef="3" />
+              <Parent isRef="34" />
+              <Text>مبلغ قابل پرداخت</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>,,RightToLeft=True,,,A=0</TextOptions>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text8>
+            <Text9 Ref="45" type="Text" isKey="true">
+              <Border>Top, Right, Bottom;Black;1;Solid;False;4;Black</Border>
+              <Brush>[191:191:191]</Brush>
+              <ClientRectangle>1,1.2,3.6,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Microsoft Sans Serif,10</Font>
+              <Guid>15ca6c98d7ad4487af470c88647b18a7</Guid>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text9</Name>
+              <Page isRef="3" />
+              <Parent isRef="34" />
+              <Text>{tottalcost-discount}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextFormat Ref="46" type="NumberFormat" isKey="true">
+                <DecimalDigits>0</DecimalDigits>
+                <GroupSeparator>,</GroupSeparator>
+                <NegativePattern>4</NegativePattern>
+                <UseLocalSetting>False</UseLocalSetting>
+              </TextFormat>
+              <TextOptions>,,RightToLeft=True,,,A=0</TextOptions>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text9>
+            <Text11 Ref="47" type="Text" isKey="true">
+              <Border>Top, Left, Bottom;Black;1;Solid;False;4;Black</Border>
+              <Brush>[191:191:191]</Brush>
+              <ClientRectangle>0.2,1.2,0.8,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Microsoft Sans Serif,9</Font>
+              <Guid>4e17e7c09d6d4ab993204bd3e392393b</Guid>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text11</Name>
+              <Page isRef="3" />
+              <Parent isRef="34" />
+              <Text>ریال</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>,,RightToLeft=True,,,A=0</TextOptions>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text11>
+            <Text30 Ref="48" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>5.6,2.4,1.2,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,12</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text30</Name>
+              <Page isRef="3" />
+              <Parent isRef="34" />
+              <Text>: آدرس</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text30>
+            <Text31 Ref="49" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <CanGrow>True</CanGrow>
+              <CanShrink>True</CanShrink>
+              <ClientRectangle>0.2,2.4,5.4,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Microsoft Sans Serif,12</Font>
+              <Guid>6dd3d1a5284443bea7bbfb5c61e818cb</Guid>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text31</Name>
+              <Page isRef="3" />
+              <Parent isRef="34" />
+              <Text>{storeAddress}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>,,RightToLeft=True,,,A=0</TextOptions>
+              <Type>Expression</Type>
+            </Text31>
+            <Text32 Ref="50" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0,3,5.6,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Microsoft Sans Serif,12</Font>
+              <Guid>e1233a8a00ee4f5ea6af444101949968</Guid>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text32</Name>
+              <Page isRef="3" />
+              <Parent isRef="34" />
+              <Text>{storePhone}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>,,RightToLeft=True,,,A=0</TextOptions>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text32>
+            <Text33 Ref="51" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>5.6,3,1.2,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,12</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text33</Name>
+              <Page isRef="3" />
+              <Parent isRef="34" />
+              <Text>: تلفن</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text33>
+            <Text20 Ref="52" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0.2,1.8,2,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Microsoft Sans Serif,12</Font>
+              <Guid>15c952c1e6dd4715a00e0f216431d0a5</Guid>
+              <HorAlignment>Right</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text20</Name>
+              <Page isRef="3" />
+              <Parent isRef="34" />
+              <Text>: WebSite</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>,,RightToLeft=True,,,A=0</TextOptions>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text20>
+            <Text21 Ref="53" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>2.2,1.8,5.2,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,11</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text21</Name>
+              <Page isRef="3" />
+              <Parent isRef="34" />
+              <Text>{storewebsite}</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text21>
+            <Text34 Ref="54" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0,3.6,6.8,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Microsoft Sans Serif,13</Font>
+              <Guid>f9531953338a4204a31732ec007bbd4d</Guid>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text34</Name>
+              <Page isRef="3" />
+              <Parent isRef="34" />
+              <Text>با تشكر از خريد شما
+</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>,,RightToLeft=True,,,A=0</TextOptions>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text34>
+            <EndPointPrimitive3 Ref="55" type="Stimulsoft.Report.Components.StiEndPointPrimitive" isKey="true">
+              <ClientRectangle>4.2,-0.4,0,0</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Name>EndPointPrimitive3</Name>
+              <Page isRef="3" />
+              <Parent isRef="34" />
+              <ReferenceToGuid>f9fcb26ec8754d20890ce11a2f0c8d84</ReferenceToGuid>
+            </EndPointPrimitive3>
+            <EndPointPrimitive4 Ref="56" type="Stimulsoft.Report.Components.StiEndPointPrimitive" isKey="true">
+              <ClientRectangle>2.6,-0.4,0,0</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Name>EndPointPrimitive4</Name>
+              <Page isRef="3" />
+              <Parent isRef="34" />
+              <ReferenceToGuid>f4cc876a20694bab93a7cd9dd3402a16</ReferenceToGuid>
+            </EndPointPrimitive4>
+            <EndPointPrimitive5 Ref="57" type="Stimulsoft.Report.Components.StiEndPointPrimitive" isKey="true">
+              <ClientRectangle>2,-0.4,0,0</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Name>EndPointPrimitive5</Name>
+              <Page isRef="3" />
+              <Parent isRef="34" />
+              <ReferenceToGuid>d0c83827dfc54ae086a0f804ab465141</ReferenceToGuid>
+            </EndPointPrimitive5>
+            <EndPointPrimitive6 Ref="58" type="Stimulsoft.Report.Components.StiEndPointPrimitive" isKey="true">
+              <ClientRectangle>0.2,-0.4,0,0</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Name>EndPointPrimitive6</Name>
+              <Page isRef="3" />
+              <Parent isRef="34" />
+              <ReferenceToGuid>b3186f657dc2431798ee2525471f1df0</ReferenceToGuid>
+            </EndPointPrimitive6>
+            <EndPointPrimitive12 Ref="59" type="Stimulsoft.Report.Components.StiEndPointPrimitive" isKey="true">
+              <ClientRectangle>6.8,-0.4,0,0</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Name>EndPointPrimitive12</Name>
+              <Page isRef="3" />
+              <Parent isRef="34" />
+              <ReferenceToGuid>71453f85c17c41779749462fa61ef8aa</ReferenceToGuid>
+            </EndPointPrimitive12>
+          </Components>
+          <Conditions isList="true" count="0" />
+          <Name>ReportSummaryBand1</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+        </ReportSummaryBand1>
+        <RoundedRectanglePrimitive1 Ref="60" type="Stimulsoft.Report.Components.StiRoundedRectanglePrimitive" isKey="true">
+          <ClientRectangle>0.6,0.6,6.4,3.8</ClientRectangle>
+          <Color>Black</Color>
+          <Conditions isList="true" count="0" />
+          <Guid>31bac19685b74e37a1bcb29dff579691</Guid>
+          <Name>RoundedRectanglePrimitive1</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <Round>0.2</Round>
+        </RoundedRectanglePrimitive1>
+      </Components>
+      <Conditions isList="true" count="0" />
+      <Guid>b8a9d7433fc24585b2dc170a3d470d9a</Guid>
+      <Margins>0,0.4,0,0</Margins>
+      <Name>Page1</Name>
+      <PageHeight>29.7</PageHeight>
+      <PageWidth>8</PageWidth>
+      <Report isRef="0" />
+    </Page1>
+  </Pages>
+  <ReferencedAssemblies isList="true" count="8">
+    <value>System.Dll</value>
+    <value>System.Drawing.Dll</value>
+    <value>System.Windows.Forms.Dll</value>
+    <value>System.Data.Dll</value>
+    <value>System.Xml.Dll</value>
+    <value>Stimulsoft.Controls.Dll</value>
+    <value>Stimulsoft.Base.Dll</value>
+    <value>Stimulsoft.Report.Dll</value>
+  </ReferencedAssemblies>
+  <ReportAlias>Report</ReportAlias>
+  <ReportChanged>8/6/2020 11:14:11 AM</ReportChanged>
+  <ReportCreated>2/24/2020 12:30:36 PM</ReportCreated>
+  <ReportFile>Settings\Reports\cashierReport.mrt</ReportFile>
+  <ReportGuid>d50b8445954048e9a8075cd94eb5b512</ReportGuid>
+  <ReportName>Report</ReportName>
+  <ReportUnit>Centimeters</ReportUnit>
+  <ReportVersion>2020.2.1.0</ReportVersion>
+  <Script>using System;
+using System.Drawing;
+using System.Windows.Forms;
+using System.Data;
+using Stimulsoft.Controls;
+using Stimulsoft.Base.Drawing;
+using Stimulsoft.Report;
+using Stimulsoft.Report.Dialogs;
+using Stimulsoft.Report.Components;
+
+namespace Reports
+{
+    public class Report : Stimulsoft.Report.StiReport
+    {
+        public Report()        {
+            this.InitializeComponent();
+        }
+
+        #region StiReport Designer generated code - do not modify
+		#endregion StiReport Designer generated code - do not modify
+    }
+}
+</Script>
+  <ScriptLanguage>CSharp</ScriptLanguage>
+  <Styles isList="true" count="0" />
+</StiSerializer>
